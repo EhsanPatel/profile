@@ -1,0 +1,58 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+<!--   <meta name="viewport" content="width=screen-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+
+  <title>Ehsan Patel - Software Developer</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=VT323&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <nav>
+    <div id="nav-container">
+      <div id="nav-text">Fast-Travel: <span id="value">Welcome</span></div>
+      <input type="range" min="0" max="10" step="1" value="0">
+    </div>
+  </nav>
+  
+  <div id="panel-container">
+    <h1 id="panel-title">Ehsan Patel</h1>
+    <div id="panel-content">Software Developer</div>
+  </div>
+<!--   <img id="map" src="background.png"> -->
+  <div id="stats">
+    <p id="x-pos">X: 0</p>
+    <p id="y-pos">Y: 0</p>
+    <p id="rotation">R: 0</p>
+  </div>
+  <div id="game-container">
+    <img id="car" src="racer.webp">
+    <img id="map" src="map.png">
+  </div>
+
+  <script type="text/javascript">
+    var position = $(window).scrollTop(); 
+    
+    $('#panel-container').scroll(function() {
+        var scroll = $('#panel-container').scrollTop();
+        if(scroll > position) {
+          $('nav').hide(100);
+        } else {
+          $('nav').show(100);
+        }
+        position = scroll;
+    });
+  </script>
+</body>
+
+</html>

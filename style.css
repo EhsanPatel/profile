@@ -1,0 +1,155 @@
+html, body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color: #268632;
+  width:100%;
+  min-height: -webkit-fill-available;
+  height:100%;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#map {
+  image-rendering: pixelated;
+  position: absolute;
+  height:700px;
+  z-index: 1;
+}
+
+#car {
+  image-rendering: pixelated;
+  position: absolute;
+  width: 50px;
+  z-index: 10;
+}
+
+#stats {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-family: 'VT323', monospace;
+  color: #FFF;
+  font-weight: bold;
+  font-size: larger;
+  z-index: 100;
+}
+
+#panel-container{
+  display:none;
+  margin: 0;
+/*   padding: 10px; */
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  right: 0;
+  width: 0vw;
+  height: 100vh;
+  z-index: 200;
+  background-color: #21252ce0;
+  backdrop-filter: blur(10px);
+  overflow: auto;
+}
+
+#panel-title {
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+ #panel-content{
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  color: #FFFFFF;
+  padding: 10px;
+  transition: 1s fade;
+   width:88%;
+}
+
+.terminal-open {
+  color: #fbff05;
+  font-family: 'VT323', monospace;
+}
+
+.terminal-command {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: larger;
+  color:#345eeb;
+}
+
+.terminal-comment {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: large;
+  color:#d2daf4;
+}
+
+.terminal-comment a, .terminal-command a{
+  color: inherit;
+}
+
+nav{
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  bottom: 2vh;
+}
+
+#nav-container{
+  width: 33%;
+  background-color: #fff;
+  border-radius:1rem;
+  padding: 0 2vh 2vh 2vh;
+}
+
+#nav-text {
+  margin: 2vh auto;
+  text-align: center;
+  font-size: large;
+  color: #000;
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  font-weight:bold;
+}
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #e41111;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: 2px solid #e41111;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  #nav-container{
+    width:80%;
+  }
+}
