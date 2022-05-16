@@ -318,7 +318,7 @@ let hobbies = new TriggerZone(8, -1750, -3450, 1200, 1200, 'right', infoPopup, "
   <br><br>`);
 
 let resume = new TriggerZone(9, -450, -1450, 1700, 1450, 'left', infoPopup, "My Resume 📄",
- `<b class='terminal-open'>&gt;</b> <b class='terminal-command'><a href="Ehsan Patel Resume.docx" download>Download Resume</a></b>
+ `<b class='terminal-open'>&gt;</b> <b class='terminal-command'><a href="Ehsan Patel Resume.pdf" download>Download Resume</a></b>
   <br><br>
   <b class='terminal-comment'>// I am always open to new opportunities! I am currently seeking co-op positions for Summer 2022, and Winter 2022</b>
   <br><br>`);
