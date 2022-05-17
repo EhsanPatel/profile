@@ -64,6 +64,7 @@ html, body {
   font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
   color: #FFFFFF;
   text-align: center;
+  padding: 10px;
 }
 
  #panel-content{
