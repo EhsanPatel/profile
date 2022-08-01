@@ -156,9 +156,11 @@ let education = new TriggerZone(2, 1500, 2350, 2000, 400, 'right', infoPopup, "E
 let projects = new TriggerZone(3, -1750, 3600, 2200, 400, 'left', infoPopup, "Experience", 
  `<b class='terminal-open'>&gt;</b> <b class='terminal-command' style='color:#e41111;'>Work Experience</b>
   <br><br>
-  <b class='terminal-open'>&gt;</b> <b class='terminal-command'>Echo Web Design<br><span style="color:#9a50f6">(Lead Frontend Developer)</span></b>
+  <b class='terminal-open'>&gt;</b> <b class='terminal-command'>Echo Web Design<br><span style="color:#9a50f6">(Lead Software Developer)</span></b>
   <br><br>
-  <b class='terminal-comment'>// Integrated UGC system for multinational client with syndication to parent brand</b>
+  <b class='terminal-comment'>// Currently building an ecommerce platform using Magento 2 for a clients catalogue with hundreds of products</b>
+  <br><br>
+  <b class='terminal-comment'>// Integrated UGC review system for multinational client with syndication to parent brand</b>
   <br><br>
   <b class='terminal-comment'>// Implemented design changes through HTML, CSS and JQuery on the Commercebuild Platform</b>
   <br><br>
