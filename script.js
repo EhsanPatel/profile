@@ -88,13 +88,17 @@ function showPopup(zone){
     $("#panel-container").css("right", "");
   }
   
-  $("#panel-container").css("display", "flex");
-  $("#panel-container").animate({width: popupSize + "vw"}, 200 );
+  // $("#panel-container").css("display", "flex");
+  $("#panel-container").addClass('active');
+  
+  //$("#panel-container").animate({width: popupSize + "vw"}, 200 );
 }
 
 function closePopup(){
-  $("#panel-container").animate({width: 0}, 200 );
-  setTimeout(function () {$("#panel-container").css("display", "none")}, 200);
+  //$("#panel-container").animate({width: 0}, 200 );
+  //setTimeout(function () {$("#panel-container").css("display", "none")}, 200);
+  $("#panel-container").removeClass('active');
+
   $('nav').show(100);
 }
 
@@ -145,7 +149,7 @@ let education = new TriggerZone(2, 1500, 2350, 2000, 400, 'right', infoPopup, "E
   <br><br>
   <b class='terminal-comment'>// Bachelor of Business Administration (BBA)</b>
   <br><br>
-  <b class='terminal-open'>&gt;</b> <b class='terminal-command'>Current Classes</b>
+  <b class='terminal-open'>&gt;</b> <b class='terminal-command'>Most Recent Classes</b>
   <br><br>
   <b class='terminal-comment'>// Intermediate Macroeconomic Analysis for Management (EC250)</b>
   <br><br>
@@ -156,11 +160,11 @@ let education = new TriggerZone(2, 1500, 2350, 2000, 400, 'right', infoPopup, "E
 let projects = new TriggerZone(3, -1750, 3600, 2200, 400, 'left', infoPopup, "Experience", 
  `<b class='terminal-open'>&gt;</b> <b class='terminal-command' style='color:#e41111;'>Work Experience</b>
   <br><br>
-  <b class='terminal-open'>&gt;</b> <b class='terminal-command'>Echo Web Design<br><span style="color:#9a50f6">(Lead Software Developer)</span></b>
+  <b class='terminal-open'>&gt;</b> <b class='terminal-command'>Echo Web Design<br><span style="color:#9a50f6">(Lead Developer, Designer)</span></b>
   <br><br>
-  <b class='terminal-comment'>// Currently building an ecommerce platform using Magento 2 for a clients catalogue with hundreds of products</b>
+  <b class='terminal-comment'>// Currently developing on the Magento Cloud Platform</b>
   <br><br>
-  <b class='terminal-comment'>// Integrated UGC review system for multinational client with syndication to parent brand</b>
+  <b class='terminal-comment'>// Integrated UGC system for multinational client with syndication to parent brand</b>
   <br><br>
   <b class='terminal-comment'>// Implemented design changes through HTML, CSS and JQuery on the Commercebuild Platform</b>
   <br><br>
@@ -313,6 +317,8 @@ let hobbies = new TriggerZone(8, -1750, -3450, 1200, 1200, 'right', infoPopup, "
   <b class='terminal-comment'>// Piano - Currently Learning</b>
   <br><br>
   <b class='terminal-open'>&gt;</b> <b class='terminal-command'>Soccer</b>
+  <br>
+  <b class='terminal-comment'>// 10+ Years Recreational</b>
   <br><br>
   <b class='terminal-open'>&gt;</b> <b class='terminal-command' style='color:#42E857;'>Team Gaming</b>
   <br><br>
@@ -320,9 +326,9 @@ let hobbies = new TriggerZone(8, -1750, -3450, 1200, 1200, 'right', infoPopup, "
   <br><br>`);
 
 let resume = new TriggerZone(9, -450, -1450, 1700, 1450, 'left', infoPopup, "My Resume 📄",
- `<b class='terminal-open'>&gt;</b> <b class='terminal-command'><a href="Ehsan Patel Resume.pdf" download>Download Resume</a></b>
+ `<b class='terminal-open'>&gt;</b> <b class='terminal-command'><a href="Ehsan_Patel_Resume.pdf" download>Download Resume</a></b>
   <br><br>
-  <b class='terminal-comment'>// I am always open to new opportunities! I am currently seeking co-op positions for Summer 2022, and Winter 2022</b>
+  <b class='terminal-comment'>// I am always open to new opportunities! I am currently seeking co-op positions for Winter 2023</b>
   <br><br>`);
 
 let social = new TriggerZone(10, 1550, -3450, 1800, 500, 'left', infoPopup, "Lets Connect!", 
