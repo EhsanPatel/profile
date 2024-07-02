@@ -151,9 +151,15 @@ let education = new TriggerZone(2, 1500, 2350, 2000, 400, 'right', infoPopup, "E
   <br><br>
   <b class='terminal-open'>&gt;</b> <b class='terminal-command'>Most Recent Classes</b>
   <br><br>
-  <b class='terminal-comment'>// Intermediate Macroeconomic Analysis for Management (EC250)</b>
+  <b class='terminal-comment'>// Organizational Behaviours II (BU398)</b>
   <br><br>
-  <b class='terminal-comment'>// Intermediate Microeconomic Analysis for Management (EC260)</b>
+  <b class='terminal-comment'>// Applied Marketing (BU362)</b>
+  <br><br>
+  <b class='terminal-comment'>// Operations Management (BU375)</b>
+  <br><br>
+  <b class='terminal-comment'>// Introduction to Combinatorics (MA239)</b>
+  <br><br>
+  <b class='terminal-comment'>// Data Structures and Management (CS240)</b>
   <b class='terminal-open'>
   <br><br>`);
 
